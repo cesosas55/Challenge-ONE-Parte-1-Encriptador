@@ -1,0 +1,317 @@
+/*Estilo de los elementos principales */
+html {
+    font-family: 'Montserrat';
+    font-size: 16px;
+    background-color: #e9ecf8;
+    color: #072b61;
+    min-width: 320px;
+}
+
+body {
+    margin: 0;
+    background-color: #e9ecf8;
+    display: grid;
+}
+
+/***** COMIENZA ESTILO DEL HEADER *****/
+.encabezado {
+    width: auto;
+    height: auto;
+    min-height: 75px;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 70px auto;
+}
+
+.titulo-pagina {
+    margin: 15px;
+    padding: 15px;
+    display: inline;
+    vertical-align: baseline;
+    font-size: 30px;
+    font-weight: bold;
+    color: #072b61;
+    border-left: #072b61 3px solid;
+}
+
+.logo-alura {
+    margin: 20px;
+}
+
+/***** TERMINA ESTILO DEL HEADER *****/
+
+/***** COMIENZA ESTILO DEL MAIN *****/
+.main-content {
+    width: auto;
+    height: auto;
+    min-height: 800px;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*
+    align-items: start;*/
+    justify-content: center;
+}
+
+/***** COMIENZA ESTILO DE LA SECCION DE ENTRADA *****/
+.input-section {
+    width: auto;
+    max-width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    flex-direction: column;
+}
+
+.input-text {
+    width: auto;
+    height: auto;
+    min-height: 50%;
+    margin: 10px;
+    resize: none;
+    padding: 16px;
+    background-color: #F3F5Fc;
+    font-size: 24px;
+    text-transform: lowercase;
+    font-family: 'montserrat';
+    border: 2.5px solid #072b61;
+    border-radius: 16px;
+    color: #072b61;
+    line-height: 1.5;
+}
+
+.area-control-detalles {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.area-detalles {
+    width: auto;
+    height: fit-content;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.etiqueta-ingreso {
+    font-size: 24px;
+    font-weight: bold;
+    color: #495057;
+}
+
+.area-control {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    justify-items: center;
+}
+
+.botones {
+    min-width: 175px;
+    width: auto;
+    max-width: 250px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #072b61;
+    border-radius: 15px;
+    background-color: #F3F5Fc;
+    color: #275082;
+    opacity: 0.5;
+    cursor: no-drop;
+}
+
+.boton-copiar {
+    min-width: 150px;
+    width: auto;
+    max-width: 250px;
+    height: 60px;
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #072b61;
+    border-radius: 15px;
+    background-color: #F3F5Fc;
+    color: #275082;
+}
+
+.botones:hover,
+.boton-copiar:hover {
+    background-color: #275082;
+    color: #F3F5Fc;
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+/***** TERMINA ESTILO DE LA SECCION DE ENTRADA *****/
+
+/***** COMIENZA ESTILO DE LA SECCION DE SALIDA *****/
+.output-section {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: 30px 10px 10px 10px;
+    padding: 10px;
+    /*
+    display: grid;
+    grid-template-rows: 1fr 1fr;*/
+    background-color: white;
+    border-radius: 16px;
+    vertical-align: middle;
+}
+
+.output-empty {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display: inherit;
+}
+
+.imagen-busqueda {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.mensajes-salida {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.aviso {
+    margin: 10px;
+    padding: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.mensaje-texto-salida {
+    margin: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.output-full {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display: inherit;
+}
+
+.Caja-texto-salida {
+    width: auto;
+    height: auto;
+    /*min-width: 50%;min-height: 350px;*/
+    margin: 10px;
+    padding: 16px;
+    background-color: #F3F5Fc;
+    font-size: 24px;
+    text-transform: lowercase;
+    border: 2.5px solid #072b61;
+    border-radius: 16px;
+    color: #072b61;
+    line-height: 1.5;
+}
+
+.output-text {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    font-size: 24px;
+    line-height: 1.5;
+    color: #072b61;
+}
+
+.control-copiar {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+}
+
+/***** TERMINA ESTILO DE LA SECCION DE SALIDA *****/
+
+/***** COMIENZA EL ESTILO DEL FOOTER *****/
+
+h2 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    /*Interlineado de los elementos*/
+}
+
+.pie-pagina {
+    width: auto;
+    height: fit-content;
+    display: grid;
+    gap: 25px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #343a40;
+    color: #fef5fc;
+}
+
+.copyright {
+    margin: 10px 10px 0 10px;
+    padding: 10px;
+}
+
+.social {
+    width: auto;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+.nav-link {
+    width: fit-content;
+    height: fit-content;
+}
+
+.logo {
+    width: 100px;
+    margin: 10px;
+    padding: 10px;
+    vertical-align: middle;
+    display: inline;
+}
+
+/***** TERMINA EL ESTILO DEL FOOTER *****/
+
+@media screen and (max-width:1000px) {
+    .main-content {
+        display: block;
+        font-size: auto;
+
+    }
+
+}

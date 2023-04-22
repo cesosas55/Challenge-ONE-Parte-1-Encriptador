@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Alura ONE G5 | Desafío del Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body id="cuerpo">
+    <header class="encabezado">
+        <div>
+            <h1><img src="images/Vector.png" alt="Logo de Alura" class="logo-alura"></h1>
+        </div>
+        <h1 class="titulo-pagina">
+            Challenge ONE - Parte 1: Encriptador
+        </h1>
+    </header>
+    <main class="main-content">
+        <section class="input-section">
+            <textarea class="input-text" id="text-in" name="intext" cols="30" rows="10"
+                placeholder="Introduzca su texto aquí..."></textarea>
+            <div class="area-control-detalles">
+                <div class="area-detalles">
+                    <label class="etiqueta-ingreso" for="marco-botones">⚠ Ingresa solo
+                        letras minúsculas y sin
+                        acentos</label>
+                </div>
+                <div class="area-control">
+                    <input type="button" class="botones" value="Encriptar" id="encriptar" disabled>
+                    <input type="button" class="botones" value="Desencriptar" id="desencriptar" disabled>
+                </div>
+            </div>
+        </section>
+        <section class="output-section">
+            <div class="output-empty" id="empty-output">
+                <div class="imagen-busqueda"><img src="images/munheco.png" alt="Búsqueda">
+                </div>
+                <h2 class="aviso">Ningún mensaje por encriptar...</h2>
+                <p class="mensaje-texto-salida">Ingrese el texto que desea encriptar o desencriptar</p>
+            </div>
+            <div class="output-full" id="full-output">
+                <div class="Caja-texto-salida">
+                    <p class="output-text" id="output-text"></p>
+                </div>
+                <div class="control-copiar">
+                    <input type="button" class="boton-copiar" value="Copiar" id="copiar">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina">
+        <div class=" copyright"> @cesosas - 2023</div>
+        <div class="social">
+            <a class="nav-link" href="https://github.com/cesosas55">
+                <img src="images/github-mark-white.png" alt="GitHub_Logo_White" class="logo">
+            </a>
+            <a class="nav-link" href="https://www.linkedin.com/in/cesosas/">
+                <img src="images/LI-Logo.png" alt="Linkedin_Logo_White" class="logo">
+            </a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
